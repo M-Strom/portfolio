@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de développeur web moderne et dynamique."
+    />
+    <title>Portfolio - MasterStrom</title>
+    <!-- FAVICONS LINKS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <!-- icons links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- FontAwesome CDN icon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="favicons/favicon-32x32.png" alt=""
+          />MasterStrom</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"  
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero d-flex align-items-center justify-content-center text-center"
+      style="height: 100vh"
+    >
+      <div class="container">
+        <h1 class="display-3">Bonjour, je suis MasterStrom</h1>
+        <p class="lead">Développeur Web Full-stack | UX/UI Design</p>
+        <a href="#portfolio" class="btn btn-primary btn-lg">Voir mes projets</a>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">À propos de moi</h2>
+        <div class="row about-box">
+          <div class="about-text">
+            <p>
+              Je suis un développeur web avec une passion pour le code et
+              l'innovation. J'ai de l'expérience dans la création de sites web
+              modernes et réactifs.
+            </p>
+          </div>
+          <div class="about-img">
+            <img
+              src="./img/christina-wocintechchat-com-0g-iLtxmMhA-unsplash.jpg"
+              alt="Mon Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center">Mes Services</h2>
+        <div class="row service-item">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./img/skills-dev.jpg"
+                class="card-img-top"
+                alt="Projet 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Developement Web</h5>
+                <div class="divider"></div>
+                <p class="card-text">Je réalise des sites dynamique et responsive</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./img/skills-autre.jpg"
+                class="card-img-top"
+                alt="Projet 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">UX/UI Design</h5>
+                <div class="divider"></div>
+                <p class="card-text">Interface dynamique et visibilité</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./img/service-mobile-design.webp"
+                class="card-img-top"
+                alt="Projet 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mobile & Dekstop App</h5>
+                <div class="divider"></div>
+                <p class="card-text">Création d'application mobile multi-Support.</p>
+                <a href="#" class="btn btn-primary">Voir le projet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- carrousel -->
+    <section id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/charlesdeluvio-pjAH2Ax4uWk-unsplash.jpg" class="d-block w-100" alt="..."/>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" class="d-block w-100" alt="..."/>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    
+    <!-- portfolio -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Mon Portfolio</h2>
+        <div class="row portfolio">
+          <!-- Première carte -->
+          <div class="col-md-4">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="./img/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg"
+                class="card-img-top"
+                alt="Projet 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projet 1</h5>
+                <p class="card-text">
+                  Description de ce projet incroyable que j'ai réalisé.
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deuxième carte -->
+          <div class="col-md-4">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="./img/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg"
+                class="card-img-top"
+                alt="Projet 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projet 2</h5>
+                <p class="card-text">
+                  Voici un autre projet que j'ai réalisé avec des technologies
+                  modernes.
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Troisième carte -->
+          <div class="col-md-4">
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="./img/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg"
+                class="card-img-top"
+                alt="Projet 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projet 3</h5>
+                <p class="card-text">
+                  Un autre projet intéressant, développé avec des outils
+                  modernes.
+                </p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col-md-4 btn-plus">
+          <a href="#" class="btn btn-primary">Tous mes projets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Contactez-moi</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <div id="output-succes"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Suivez-moi sur mes réseaux sociaux :</p>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- local script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
